@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: HomeTest
+  annotations:
+    github.com/project-slug: Amritha101/HomeTest
+spec:
+  type: other
+  lifecycle: unknown
+  owner: Amritha101
