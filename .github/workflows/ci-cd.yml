@@ -34,9 +34,4 @@ jobs:
          tag_name: ${{ github.run_number }}
          release_name: Release ${{ github.run_number }}
 
-    - name: Deploy to Backstage
-      run: backstage-cli deploy localhost:3000
-      env:
-        BACKSTAGE_API_URL: ${{ secrets.BACKSTAGE_API_URL }}
-        BACKSTAGE_API_TOKEN: ${{ secrets.BACKSTAGE_API_TOKEN }}
 
