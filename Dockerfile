@@ -1,5 +1,10 @@
-FROM python:3.10
+FROM python:3.10.4
 
-ADD main.py .
+# Set the working directory in the container
+WORKDIR /app
 
-CMD [ "python", "/main.py"]
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Run the Python application
+CMD ["python", "app.py"]
